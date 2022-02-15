@@ -1,0 +1,158 @@
+:root {
+  --main-color: #2196f3;
+  --red-color:#ff0057;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.title {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0px;
+  border-radius: 5px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+
+.start {
+  background-color: #009688;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.start:hover {
+  background-color: #009688ba;
+}
+
+.words {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+
+.input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+  border-radius: 5px;
+}
+.input:focus {
+  outline: none;
+}
+
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+
+.control span {
+  color: #009688;
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.finish .win {
+  color: var(--main-color);
+}
+
+.finish .lose {
+  color:var(--red-color);
+}
+.custom-select {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+ }
+ p {
+   color:#009688;
+   font-weight: bold;
+   font-size: 25px;
+ }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+  padding: 5px 20px;
+
+ font-weight: bold;
+  font-size: 20px;
+  color: #009688;
+}
+
+
+@media (max-width:767px) {
+
+  .container {
+    width: 360px;
+  }
+  
+}
